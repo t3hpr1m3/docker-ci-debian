@@ -1,4 +1,4 @@
-# Debian 10 (buster) Ansible image
+# Debian based image for Ansible CI testing.
 
 [![Docker Automated build](https://img.shields.io/docker/cloud/build/jdubz/docker-ci-debian.svg?maxAge=2592000)](https://hub.docker.com/r/jdubz/docker-ci-debian/)
 [![Docker pulls](https://img.shields.io/docker/pulls/jdubz/docker-ci-debian.svg?maxAge=2592000)](https://hub.docker.com/r/jdubz/docker-ci-debian/)
