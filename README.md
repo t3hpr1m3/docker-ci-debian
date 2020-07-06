@@ -13,7 +13,7 @@ mounts:
 
 ## Tags
 
-- [`buster`, `latest`](https://git.dubzland.net/jdubz/docker-ci-debian/blob/buster/Dockerfile)
+- [`buster`, `latest`, `stable`](https://git.dubzland.net/jdubz/docker-ci-debian/blob/buster/Dockerfile)
 - [`buster-slim`](https://git.dubzland.net/jdubz/docker-ci-debian/blob/buster-slim/Dockerfile)
 - [`stretch`](https://git.dubzland.net/jdubz/docker-ci-debian/blob/stretch/Dockerfile)
 - [`stretch-slim`](https://git.dubzland.net/jdubz/docker-ci-debian/blob/stretch-slim/Dockerfile)
