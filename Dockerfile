@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:buster-slim
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C
