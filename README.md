@@ -1,6 +1,6 @@
 # Debian based image for Ansible CI testing.
 
-[![Gitlab pipeline status (self-hosted)](https://img.shields.io/gitlab/pipeline/jdubz/docker-ci-debian/stretch?gitlab_url=https%3A%2F%2Fgit.dubzland.net)](https://git.dubzland.net/jdubz/docker-ci-debian/)
+[![Gitlab pipeline status (self-hosted)](https://img.shields.io/gitlab/pipeline/jdubz/docker-ci-debian/stretch-slim?gitlab_url=https%3A%2F%2Fgit.dubzland.net)](https://git.dubzland.net/jdubz/docker-ci-debian/)
 [![Docker Automated build](https://img.shields.io/docker/cloud/automatec/build/jdubz/docker-ci-debian.svg?maxAge=2592000)](https://hub.docker.com/r/jdubz/docker-ci-debian/)
 [![Docker pulls](https://img.shields.io/docker/pulls/jdubz/docker-ci-debian.svg?maxAge=2592000)](https://hub.docker.com/r/jdubz/docker-ci-debian/)
 
