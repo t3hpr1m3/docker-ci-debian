@@ -23,23 +23,8 @@ build:
       .
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
 
-push-tag:
+push:
   stage: deploy
-  variables:
-    GIT_STRATEGY: none
-  script:
-    - docker pull $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
-    - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
-    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
-    - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA $DOCKER_REGISTRY/$DOCKER_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
-    - docker push $DOCKER_REGISTRY/$DOCKER_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
-  except:
-    refs:
-      - main
-
-push-latest:
-  stage: deploy
-  script:
   variables:
     GIT_STRATEGY: none
   script:
@@ -47,7 +32,6 @@ push-latest:
     - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE:latest
     - docker push $CI_REGISTRY_IMAGE:latest
     - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA $DOCKER_REGISTRY/$DOCKER_REGISTRY_IMAGE:latest
+    - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA $DOCKER_REGISTRY/$DOCKER_REGISTRY_IMAGE:stable
     - docker push $DOCKER_REGISTRY/$DOCKER_REGISTRY_IMAGE:latest
-  only:
-    refs:
-      - main
+    - docker push $DOCKER_REGISTRY/$DOCKER_REGISTRY_IMAGE:stable
